@@ -424,6 +424,7 @@ section {
   font-size: 32px;
   color: var(--muted2);
   padding-top: 4px;
+  padding-right: 12px;
   transition:
     color 0.3s,
     transform 0.3s;
@@ -431,7 +432,7 @@ section {
 }
 .project-card:hover .project-arrow {
   color: var(--accent);
-  transform: translateX(8px) translateY(-4px);
+  transform: translateX(4px) translateY(-4px);
 }
 .project-detail {
   max-height: 0;
