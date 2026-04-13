@@ -37,6 +37,22 @@ const obs = new IntersectionObserver(
   { threshold: 0.1 },
 );
 document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+
+function keepCardInView(card, behavior = 'smooth') {
+  const topOffset = 96;
+  const bottomOffset = 120;
+  const rect = card.getBoundingClientRect();
+  const aboveViewport = rect.top < topOffset;
+  const belowViewport = rect.bottom > window.innerHeight - bottomOffset;
+
+  if (!aboveViewport && !belowViewport) return;
+
+  const targetY = window.scrollY + rect.top - topOffset;
+  const maxY = document.documentElement.scrollHeight - window.innerHeight;
+  const clampedY = Math.max(0, Math.min(targetY, maxY));
+  window.scrollTo({ top: clampedY, behavior });
+}
+
 function toggleDetail(id, card) {
   const d = document.getElementById(id),
     open = d.classList.contains('open');
@@ -49,9 +65,9 @@ function toggleDetail(id, card) {
   if (!open) {
     d.classList.add('open');
     card.style.background = 'rgba(200,169,110,.03)';
-    setTimeout(
-      () => d.scrollIntoView({ behavior: 'smooth', block: 'nearest' }),
-      100,
-    );
+
+    // One adjustment during animation + one correction after layout settles.
+    setTimeout(() => keepCardInView(card, 'smooth'), 120);
+    setTimeout(() => keepCardInView(card, 'auto'), 760);
   }
 }
