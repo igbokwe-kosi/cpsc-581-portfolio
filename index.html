@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Kosi — CPSC 581 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div id="progress"></div>
+    <div id="loader">
+      <div class="loader-name">Kosi</div>
+      <div class="loader-line" id="loaderLine"></div>
+      <div class="loader-label">Loading Portfolio</div>
+    </div>
+    <nav>
+      <a href="#" class="nav-logo">K. Igbokwe</a>
+      <ul class="nav-links">
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </nav>
+    <section id="hero">
+      <div class="hero-bg-text">Design</div>
+      <div class="hero-eyebrow">
+        CPSC 581 &middot; HCI II &middot; Winter 2026
+      </div>
+      <h1 class="hero-name">Kosiso<br /><em>Igbokwe</em></h1>
+      <p class="hero-sub">
+        Designing interfaces that disappear. Making tools that feel like quiet
+        partners &mdash; supporting complex human interactions through simple,
+        elegant form.
+      </p>
+      <div class="hero-meta">
+        <span>University of Calgary</span>
+        <span>Student ID &middot; 30151526</span>
+        <span>Group 4/8/10</span>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-bar"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">Human-Computer Interaction</span>
+        <span class="marquee-item">Cognitive Load Reduction</span>
+        <span class="marquee-item">Multi-Modal Design</span>
+        <span class="marquee-item">Diverge &middot; Converge</span>
+        <span class="marquee-item">Physical Computing</span>
+        <span class="marquee-item">Spatial Audio</span>
+        <span class="marquee-item">Embodied Interaction</span>
+        <span class="marquee-item">Human-Computer Interaction</span>
+        <span class="marquee-item">Cognitive Load Reduction</span>
+        <span class="marquee-item">Multi-Modal Design</span>
+        <span class="marquee-item">Diverge &middot; Converge</span>
+        <span class="marquee-item">Physical Computing</span>
+        <span class="marquee-item">Spatial Audio</span>
+        <span class="marquee-item">Embodied Interaction</span>
+      </div>
+    </div>
+    <section id="philosophy">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-num">01 &mdash; Philosophy</div>
+          <h2 class="section-title">Design <em>Thinking</em></h2>
+        </div>
+      </div>
+      <div class="content reveal d1">
+        <div class="phil-label">Core values &amp; approach</div>
+        <div class="phil-body">
+          <p>
+            My design philosophy is driven by a commitment to
+            <span class="hl">minimising cognitive load</span> &mdash; making
+            digital interfaces feel almost invisible. Great design fits
+            seamlessly into a user's existing workflow, feeling like a natural
+            extension of what they're trying to do.
+          </p>
+          <p>
+            I follow a structured process built around
+            <span class="hl">divergence and convergence</span>. In the
+            divergence phase, I explore without immediately judging &mdash;
+            creating space for creativity and unexpected solutions. Convergence
+            brings rigour: every concept tested against real environmental
+            constraints.
+          </p>
+          <p>
+            I intentionally reject tools that introduce unnecessary mental
+            clutter. Instead I use
+            <span class="hl"
+              >haptic feedback, spatial audio, and spatial layout</span
+            >
+            to guide users without overwhelming them. Design should feel like a
+            quiet partner.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-num">02 &mdash; Work</div>
+          <h2 class="section-title">Group <em>Projects</em></h2>
+        </div>
+        <div
+          style="
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted2);
+          "
+        >
+          Click to expand &darr;
+        </div>
+      </div>
+      <!-- GP1 -->
+      <div class="project-card reveal" onclick="toggleDetail('d-gp1', this)">
+        <div class="project-num">01</div>
+        <div>
+          <div class="tag-row">
+            <span class="tag hi">Web &middot; Interactive</span>
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Feb 2026</span>
+          </div>
+          <div class="project-name">A Family of <em>Buttons</em></div>
+          <p class="project-desc">
+            A live web experience where each group member's button reveals their
+            personality through a shared theatre metaphor &mdash; unified by a
+            stage, distinguished by individual character.
+          </p>
+        </div>
+        <div class="project-arrow">&#8599;</div>
+      </div>
+      <div class="project-detail" id="d-gp1">
+        <div class="pdi">
+          <div class="detail-cols">
+            <div>
+              <div class="dlabel">Divergence &mdash; Early Sketches</div>
+              <div class="dtext">
+                <p>
+                  <strong>Subgroup B01-4</strong> explored rough low-fidelity
+                  sketches before the merge: buttons that grow with clicks,
+                  buttons that travel the canvas, buttons that vanish and
+                  respawn after a cooldown. The goal was breadth, not
+                  refinement.
+                </p>
+              </div>
+              <div class="img-gallery c1">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture1.png"
+                    alt="B01-4 brainstorm sketches"
+                    loading="lazy"
+                  />
+                  <figcaption>B01-4 Subgroup Brainstorm Sketches</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div>
+              <div class="dlabel">Final Implementation</div>
+              <div class="dtext">
+                <p>
+                  A dark theatre stage framed by red velvet curtains. Four
+                  buttons below the stage each launch a personal slideshow. At
+                  the end all buttons celebrate together &mdash; a deliberate
+                  choice reflecting our collaborative dynamic.
+                </p>
+              </div>
+              <div class="img-gallery c1">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture2.png"
+                    alt="Final theatre interface"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Final Theatre Interface &mdash; Group 8
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="chips">
+                <span class="chip">HTML/CSS</span
+                ><span class="chip">JavaScript</span
+                ><span class="chip">Netlify</span>
+              </div>
+              <a
+                href="https://581-group-project-1.netlify.app"
+                target="_blank"
+                class="dlink"
+                >Live Demo &#8599;</a
+              >
+            </div>
+            <div class="detail-full">
+              <div class="dlabel">My Contribution &amp; Reflection</div>
+              <div class="dtext">
+                <p>
+                  I designed the "Kosi" button &mdash; red for energy and
+                  confidence, with a popcorn icon tying into the Movie &amp;
+                  Show theme I proposed in the first joint session. I introduced
+                  the explode-then-respawn mechanic, adding playful
+                  unpredictability that reflects my personality.
+                </p>
+              </div>
+              <div class="dquote">
+                "GP1 taught me the value of committing to a strong metaphor
+                early. Defining what world the interface lives in makes every
+                subsequent decision feel natural and inevitable."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GP2 -->
+      <div class="project-card reveal d1" onclick="toggleDetail('d-gp2', this)">
+        <div class="project-num">02</div>
+        <div>
+          <div class="tag-row">
+            <span class="tag hi">WebRTC &middot; Multi-Modal</span>
+            <span class="tag">Spatial Audio &middot; ML</span>
+            <span class="tag">Mar 2026</span>
+          </div>
+          <div class="project-name">
+            <em>Marco Polo</em> &mdash; Expertise Sharing
+          </div>
+          <p class="project-desc">
+            A peer-to-peer Blender guidance system that keeps novices in their
+            workspace, directing them through spatial audio pings and peripheral
+            edge-glow cues instead of disruptive screen switches.
+          </p>
+        </div>
+        <div class="project-arrow">&#8599;</div>
+      </div>
+      <div class="project-detail" id="d-gp2">
+        <div class="pdi">
+          <div class="detail-cols">
+            <div>
+              <div class="dlabel">Divergence &mdash; Ideation</div>
+              <div class="dtext">
+                <p>
+                  We explored hot/cold cursors, spatial audio, proximity
+                  indicators, expert annotation dashboards, and peer-to-peer
+                  views before converging on the dual-modality approach: audio
+                  for 3D, edge-glow for 2D UI elements.
+                </p>
+              </div>
+              <div class="img-gallery c2">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture3.png"
+                    alt="Hot/Cold cursor and Spatial Audio sketches"
+                    loading="lazy"
+                  />
+                  <figcaption>Hot/Cold Cursor &amp; Spatial Audio</figcaption>
+                </figure>
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture4.png"
+                    alt="Novice/Expert screen concepts"
+                    loading="lazy"
+                  />
+                  <figcaption>Novice / Expert screen concepts</figcaption>
+                </figure>
+              </div>
+              <div class="img-gallery c1" style="margin-top: 12px">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture5.jpg"
+                    alt="Final GP2 design sketch"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Final design sketch &mdash; annotated interaction flow
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div>
+              <div class="dlabel">Final Application</div>
+              <div class="dtext">
+                <p>
+                  The expert drops notes in World Space or UI Element mode via a
+                  peer-to-peer WebRTC connection. The novice says "Marco" to
+                  trigger a spatial audio ping; moving closer raises the pitch
+                  and pans toward center.
+                </p>
+              </div>
+              <div class="img-gallery c1">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture6.png"
+                    alt="Marco Polo novice and expert screens"
+                    loading="lazy"
+                    style="background: #1a1a1a"
+                  />
+                  <figcaption>
+                    Novice Screen (left) &amp; Expert Dashboard (right)
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="chips">
+                <span class="chip">WebRTC</span><span class="chip">Whisper</span
+                ><span class="chip">Teachable Machine</span
+                ><span class="chip">Web Audio API</span>
+              </div>
+            </div>
+            <div class="detail-full">
+              <div class="dlabel">Reflection</div>
+              <div class="dquote">
+                "GP2 deepened my understanding of how different sensory channels
+                offer different levels of precision &mdash; and how they must be
+                matched to specific spatial tasks."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GP3 -->
+      <div class="project-card reveal d2" onclick="toggleDetail('d-gp3', this)">
+        <div class="project-num">03</div>
+        <div>
+          <div class="tag-row">
+            <span class="tag hi">Physical Computing &middot; IoT</span>
+            <span class="tag">Raspberry Pi Pico &middot; Fusion 360</span>
+            <span class="tag">Apr 2026</span>
+          </div>
+          <div class="project-name">The <em>Prompt Cup</em></div>
+          <p class="project-desc">
+            A 3D-printed sensor-equipped cup with an OLED screen and
+            colour-coded LEDs that eases small talk at social events &mdash; a
+            lightweight, portable conversation starter.
+          </p>
+        </div>
+        <div class="project-arrow">&#8599;</div>
+      </div>
+      <div class="project-detail" id="d-gp3">
+        <div class="pdi">
+          <div class="detail-cols">
+            <div>
+              <div class="dlabel">Divergence &mdash; My 4 Concepts</div>
+              <div class="dtext">
+                <p>
+                  Conversation Plate, Energy Checker Sphere, Pacing Plate &amp;
+                  Cup, Temperature-Aware Bowl. After evaluation all four were
+                  rejected &mdash; the rejections sharpened the criteria I
+                  brought into the group meeting.
+                </p>
+              </div>
+              <div class="img-gallery c1">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture7.png"
+                    alt="GP3 initial concept sketches page 1"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    Initial concepts &mdash; socializing &amp; eating experience
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="img-gallery c1" style="margin-top: 12px">
+                <figure class="gallery-item sketch">
+                  <img
+                    src="images/Picture8.png"
+                    alt="GP3 initial concept sketches page 2"
+                    loading="lazy"
+                  />
+                  <figcaption>Pacing Plate &amp; Temperature Bowl</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div>
+              <div class="dlabel">Prototype &mdash; Electronics</div>
+              <div class="img-gallery c2" style="margin-top: 0">
+                <figure class="gallery-item photo">
+                  <img
+                    src="images/Picture9.jpg"
+                    alt="Breadboard assembly"
+                    loading="lazy"
+                  />
+                  <figcaption>Raspberry Pi Pico &amp; wiring</figcaption>
+                </figure>
+                <figure class="gallery-item photo">
+                  <img
+                    src="images/Picture10.jpg"
+                    alt="Breadboard with RGB LED lit"
+                    loading="lazy"
+                  />
+                  <figcaption>RGB LED active on Pico 2</figcaption>
+                </figure>
+              </div>
+              <div class="dlabel" style="margin-top: 28px">
+                Prototype &mdash; OLED Display
+              </div>
+              <div class="img-gallery c2" style="margin-top: 0">
+                <figure class="gallery-item photo">
+                  <img
+                    src="images/Picture11.jpg"
+                    alt="OLED showing first prompt"
+                    loading="lazy"
+                  />
+                  <figcaption>"What are your top 5 TV series?"</figcaption>
+                </figure>
+                <figure class="gallery-item photo">
+                  <img
+                    src="images/Picture12.jpg"
+                    alt="OLED showing second prompt"
+                    loading="lazy"
+                  />
+                  <figcaption>"Favourite food travelling abroad?"</figcaption>
+                </figure>
+              </div>
+              <div class="chips" style="margin-top: 20px">
+                <span class="chip">Raspberry Pi Pico</span
+                ><span class="chip">MicroPython</span
+                ><span class="chip">OLED</span><span class="chip">RGB LED</span
+                ><span class="chip">Fusion 360</span
+                ><span class="chip">3D Print</span> ><span class="chip"
+                  >Python</span
+                >
+              </div>
+            </div>
+            <div class="detail-full">
+              <div class="dquote">
+                "The Prompt Cup succeeded because it respected physical
+                constraints from the start &mdash; portable, clean, and its LED
+                colour-matching mechanic works at a distance without requiring
+                direct interaction."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="big-quote reveal">
+      <div class="bq-text">
+        "Design should feel like a <strong>quiet partner</strong> &mdash;
+        supporting complex human interactions through a
+        <strong>simple, elegant interface</strong>."
+      </div>
+      <div class="bq-attr">
+        &mdash; Design Philosophy &middot; Kosisochukwu Igbokwe
+      </div>
+    </div>
+    <section id="reflection">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-num">03 &mdash; Growth</div>
+          <h2 class="section-title">Overall <em>Reflection</em></h2>
+        </div>
+      </div>
+      <div class="ref-grid">
+        <div class="ref-cell reveal">
+          <div class="ref-num">Shift &middot; 01</div>
+          <div class="ref-title">Beyond Visual Affordances</div>
+          <p>
+            My perspective on HCI has expanded from visual affordances to
+            treating audio, haptics, peripheral cues, and embodied metaphors as
+            equally important parts of the design space.
+          </p>
+        </div>
+        <div class="ref-cell reveal d1">
+          <div class="ref-num">Shift &middot; 02</div>
+          <div class="ref-title">Frame&ndash;Diverge&ndash;Converge</div>
+          <p>
+            No longer just a course concept &mdash; a practical way to balance
+            creative exploration with real-world constraints. In a dense 3D
+            environment, the wrong modality actively worsens the experience.
+          </p>
+        </div>
+        <div class="ref-cell reveal d2">
+          <div class="ref-num">Shift &middot; 03</div>
+          <div class="ref-title">Honesty in Documentation</div>
+          <p>
+            Documenting limitations and failures is just as important as
+            highlighting successes. What didn't work, why it didn't, and what
+            I'd do differently &mdash; that's where a real design philosophy
+            comes through.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="marquee-wrap">
+      <div
+        class="marquee-track"
+        style="animation-direction: reverse; animation-duration: 28s"
+      >
+        <span class="marquee-item">GP1 &mdash; Theatre Buttons</span>
+        <span class="marquee-item">GP2 &mdash; Marco Polo</span>
+        <span class="marquee-item">GP3 &mdash; Prompt Cup</span>
+        <span class="marquee-item">University of Calgary</span>
+        <span class="marquee-item">Winter 2026</span>
+        <span class="marquee-item">CPSC 581</span>
+        <span class="marquee-item">GP1 &mdash; Theatre Buttons</span>
+        <span class="marquee-item">GP2 &mdash; Marco Polo</span>
+        <span class="marquee-item">GP3 &mdash; Prompt Cup</span>
+        <span class="marquee-item">University of Calgary</span>
+        <span class="marquee-item">Winter 2026</span>
+        <span class="marquee-item">CPSC 581</span>
+      </div>
+    </div>
+    <footer>
+      <div class="f-left">Kosisochukwu Igbokwe &mdash; CPSC 581 Portfolio</div>
+      <div class="f-right">University of Calgary &middot; Winter 2026</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
