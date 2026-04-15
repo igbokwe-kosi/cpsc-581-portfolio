@@ -749,3 +749,11 @@ body::after {
     text-align: center;
   }
 }
+.d3 {
+  transition-delay: 0.4s;
+}
+@media (max-width: 768px) {
+  .ref-grid[style] {
+    grid-template-columns: 1fr !important;
+  }
+}
